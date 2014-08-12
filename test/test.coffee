@@ -11,3 +11,13 @@ describe "Animal", ->
     it "should be able to be set a nickname", ->
         pifou.setNickname "glopglop"
         pifou.getNickname().should.equals "glopglop"
+
+describe 'Functions', ->
+    it 'should be a function', ->
+        (->).should.be.a 'function'
+
+describe 'Timeouts', ->
+    it 'Should take some time', (done) ->
+        setTimeout ->
+                done()
+            , 1000

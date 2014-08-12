@@ -19,17 +19,3 @@ describe('String', function() {
         "ceci est un test".should.include('test');
     })
 });
-
-describe('Functions', function() {
-   it('should type function', function() {
-        (function () {}).should.be.a('function')
-   }); 
-});
-
-describe('Timeouts', function() {
-    describe("#setTimeout", function() {
-        it("should be asynchronous", function(done) {
-            setTimeout(function() {done();}, 1000);
-        })
-    });
-});
