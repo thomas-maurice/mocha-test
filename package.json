@@ -1,0 +1,16 @@
+{
+    "name": "test-mocha",
+    "author": "svartbergtroll <tmaurice59@gmail.com>",
+    "version": "0.0.1",
+    "dependencies": {
+        "coffee-script": "1.7.x"
+    },
+    "scripts": {
+        "test": "mocha --compilers coffee:coffee-script/register"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "chai": "~1.6.0",
+        "grunt": "*"
+    }
+}
